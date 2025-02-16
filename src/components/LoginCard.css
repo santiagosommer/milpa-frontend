@@ -1,0 +1,45 @@
+.login-card {
+  background-color: var(--color-bg-secondary-light);
+}
+
+.login-title {
+  color: var(--color-text-primary-light);
+}
+
+.login-text {
+  color: var(--color-text-secondary-light);
+}
+
+.text-input label {
+  color: var(--color-text-secondary-light);
+}
+
+.login-button{
+    background-color: var(--color-btn-primary-light);
+    color: var(--color-btn-secondary-light);
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  .login-card {
+    background-color: var(--color-bg-secondary-dark);
+  }
+
+  .login-title {
+    color: var(--color-text-primary-dark);
+  }
+
+  .login-text {
+    color: var(--color-text-secondary-dark);
+  }
+
+  .text-input label {
+    color: var(--color-text-secondary-dark);
+  }
+
+  .login-button{
+    background-color: var(--color-btn-primary-dark);
+    color: var(--color-btn-secondary-dark);
+  }
+}

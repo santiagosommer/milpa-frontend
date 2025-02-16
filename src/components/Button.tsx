@@ -8,9 +8,6 @@ import { tv, type VariantProps } from "tailwind-variants"
 // Local imports
 import { cx, focusRing } from '../lib/utils'
 
-// CSS
-import './Button.css'
-
 const buttonVariants = tv({
   base: [
     // base

@@ -2,19 +2,19 @@ import { Card } from './Card';
 import { Button } from "../components/Button";
 import EmailInput from "../components/EmailInput";
 import PasswordInput from "../components/PasswordInput";
+import './LoginCard.css';
 
 export const LoginCard = () => (
-  <Card className="mx-auto max-w-lg">
+  <Card
+    className="login-card mx-auto max-w-lg">
     <div className="flex flex-col items-center justify-center p-4 space-y-4">
-      <h1 className="text-2xl font-bold">Login</h1>
-      <p className="text-gray-600">Welcome back!</p>
-      <div className="w-full max-w-xs">
+      <h1 className="login-title text-2xl font-bold text-gray-900 dark:text-gray-50">Login</h1>
+      <p className="login-text font-bold">Welcome back!</p>
+      <div className="text-input w-full max-w-xs">
         <EmailInput />
-      </div>
-      <div className="w-full max-w-xs">
         <PasswordInput />
       </div>
-      <Button type="submit" className="w-full max-w-xs">Log in</Button>
+      <Button type="submit" className=" login-button w-full max-w-xs bg-blue-500 text-white dark:bg-blue-700 dark:text-gray-50">Log in</Button>
     </div>
   </Card>
 );

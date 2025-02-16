@@ -1,13 +1,41 @@
 @import "tailwindcss";
 
 :root {
+  /* Light Mode */
+  --color-bg-light: #FEFAE0;
+  --color-bg-secondary-light: #A4B465;
+  --color-btn-primary-light: #FFCF50;
+  --color-btn-secondary-light: #626F47;
+  --color-text-primary-light: #FFCF50;
+  --color-text-secondary-light: #626F47;
+  --color-icon-action-light: #FFCF50;
+  --color-icon-detail-light: #626F47;
+  --color-warning-light: #FFCF50;
+  --color-success-light: #626F47;
+  --color-border-dark-light: #626F47;
+  --color-border-light-light: #A4B465;
+
+  /* Dark Mode */
+  --color-bg-dark: #2E2E28;
+  --color-bg-secondary-dark: #3A3A2E;
+  --color-btn-primary-dark: #E6B450;
+  --color-btn-secondary-dark: #4A4F3D;
+  --color-text-primary-dark: #D8D8B8;
+  --color-text-secondary-dark: #A4B465;
+  --color-icon-action-dark: #E6B450;
+  --color-icon-detail-dark: #A4B465;
+  --color-warning-dark: #E6B450;
+  --color-success-dark: #4A5A3B;
+  --color-border-dark-dark: #4A4F3D;
+  --color-border-light-dark: #626F47;
+
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #FEFAE0;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -40,7 +68,20 @@ h1 {
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: var(--color-bg-light);
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #213547;
+    background-color: var(--color-bg-dark);
   }
   a:hover {
     color: #747bff;
