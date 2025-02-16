@@ -14,7 +14,7 @@
   color: var(--color-text-secondary-light);
 }
 
-.login-button{
+.login-button {
     background-color: var(--color-btn-primary-light);
     color: var(--color-btn-secondary-light);
 }
