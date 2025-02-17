@@ -8,6 +8,7 @@
   --color-btn-secondary-light: #626F47;
   --color-btn-primary-light-hover: #E5B840;
   --color-btn-secondary-light-hover: #4A4F3D;
+  --color-btn-focus-ring: #FFCF50;
   --color-text-primary-light: #FFCF50;
   --color-text-secondary-light: #626F47;
   --color-icon-action-light: #FFCF50;
@@ -17,6 +18,7 @@
   --color-border-dark-light: #626F47;
   --color-border-light-light: #A4B465;
 
+
   /* Dark Mode */
   --color-bg-dark: #2E2E28;
   --color-bg-secondary-dark: #3A3A2E;
@@ -24,6 +26,7 @@
   --color-btn-secondary-dark: #4A4F3D;
   --color-btn-primary-dark-hover: #D89A30;
   --color-btn-secondary-dark-hover: #FFF0D0;
+  --color-btn-focus-ring-dark: #E6B450;
   --color-text-primary-dark: #D8D8B8;
   --color-text-secondary-dark: #A4B465;
   --color-icon-action-dark: #E6B450;
@@ -32,7 +35,6 @@
   --color-success-dark: #4A5A3B;
   --color-border-dark-dark: #4A4F3D;
   --color-border-light-dark: #626F47;
-
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

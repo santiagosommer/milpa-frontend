@@ -14,11 +14,11 @@ export const focusRing = [
 
 export const focusInput = [
   // base
-  "focus:ring-2",
+  "focus:ring-1",
   // ring color
-  "focus:ring-blue-200 focus:dark:ring-blue-700/30",
+  "focus:ring-[var(--color-btn-focus-ring)] focus:dark:ring-[var(--color-btn-focus-ring-dark)]",
   // border color
-  "focus:border-blue-500 focus:dark:border-blue-700",
+  "focus:border-[var(--color-btn-focus-ring)] focus:dark:border-[var(--color-btn-focus-ring-dark)]",
 ]
 
 // Tremor hasErrorInput [v0.0.1]
