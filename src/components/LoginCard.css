@@ -17,7 +17,18 @@
 .login-button {
     background-color: var(--color-btn-primary-light);
     color: var(--color-btn-secondary-light);
-}
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+  
+  .login-button:hover {
+    background-color: var(--color-btn-primary-light-hover);
+    color: var(--color-btn-secondary-light-hover);
+  }
+
+  .login-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
 
 
 
@@ -33,7 +44,6 @@
   .login-text {
     color: var(--color-text-secondary-dark);
   }
-
   .text-input label {
     color: var(--color-text-secondary-dark);
   }
@@ -42,4 +52,10 @@
     background-color: var(--color-btn-primary-dark);
     color: var(--color-btn-secondary-dark);
   }
+
+  .login-button:hover {
+    background-color: var(--color-btn-primary-dark-hover);
+    color: var(--color-btn-secondary-dark-hover);
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
 }

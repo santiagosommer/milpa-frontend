@@ -6,6 +6,8 @@
   --color-bg-secondary-light: #A4B465;
   --color-btn-primary-light: #FFCF50;
   --color-btn-secondary-light: #626F47;
+  --color-btn-primary-light-hover: #E5B840;
+  --color-btn-secondary-light-hover: #4A4F3D;
   --color-text-primary-light: #FFCF50;
   --color-text-secondary-light: #626F47;
   --color-icon-action-light: #FFCF50;
@@ -20,6 +22,8 @@
   --color-bg-secondary-dark: #3A3A2E;
   --color-btn-primary-dark: #E6B450;
   --color-btn-secondary-dark: #4A4F3D;
+  --color-btn-primary-dark-hover: #D89A30;
+  --color-btn-secondary-dark-hover: #FFF0D0;
   --color-text-primary-dark: #D8D8B8;
   --color-text-secondary-dark: #A4B465;
   --color-icon-action-dark: #E6B450;
