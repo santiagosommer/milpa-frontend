@@ -1,28 +1,41 @@
-import { Card } from './Card';
-import { Button } from "../components/Button";
-import EmailInput from "../components/EmailInput";
-import PasswordInput from "../components/PasswordInput";
+// Form validation: https://react-hook-form.com/get-started
 import { useForm, FormProvider } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+
+// Components
+import { Button } from "./Button";
+import EmailInput from "./EmailInput";
+import PasswordInput from "./PasswordInput";
+import { Card } from './Card';
+
+// Styles
 import './LoginCard.css';
 
+
+// Form validation schema definition
 const schema = yup.object().shape({
   email: yup.string().email("Invalid email address").required("Email is required"),
   password: yup.string().required("Password is required"),
+  
 });
 
 export const LoginCard = () => {
 
+  // useForm: https://react-hook-form.com/docs/useform
+  // Uses methods.handleSubmit to validate the form with the schema provided
   const methods = useForm({
     resolver: yupResolver(schema),
   });
 
   const onSubmit = (data: { email: string; password: string }) => {
+    // Send data to backend here
     console.log(data.email, data.password);
   };
 
   return(
+    // FormProvider is intented for deeply nested structures
+    // The idea is to develop the form structure in the future, hence the use of FormProvider
     <FormProvider {...methods}>
       <Card className="login-card mx-auto max-w-lg">
         <form onSubmit={methods.handleSubmit(onSubmit)}  className="flex flex-col items-center justify-center p-4 space-y-4">

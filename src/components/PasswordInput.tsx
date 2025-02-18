@@ -17,6 +17,7 @@ export const PasswordInput = () => {
         id="password"
         {...register("password", { required: "Password is required" })}
       />
+      {/* Displays the error message if the password is not provided */}
       {errors.password?.message && typeof errors.password.message === 'string' && (
         <p className="text-red-500 text-sm">{errors.password.message}</p>
       )}
