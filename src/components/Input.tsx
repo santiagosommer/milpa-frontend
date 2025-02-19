@@ -118,6 +118,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
                 focusRing,
               )}
               type="button"
+              style={{ backgroundColor: 'transparent', border: 'none', padding: 0 }}
               onClick={() => {
                 setTypeState(typeState === "password" ? "text" : "password")
               }}
