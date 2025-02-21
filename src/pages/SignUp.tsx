@@ -1,6 +1,10 @@
+import SignUpCard from '../components/SignUpCard';
+
 export const SignUp = () => {
   return (
-    <div>SignUp</div>
+    <div className="flex items-center justify-center min-h-screen">
+        <SignUpCard />
+    </div>
   )
 }
 
