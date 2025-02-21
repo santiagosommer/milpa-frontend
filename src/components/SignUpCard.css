@@ -1,12 +1,12 @@
-.login-card {
+.signup-card {
     background-color: var(--color-bg-secondary-light);
   }
   
-  .login-title {
+  .signup-title {
     color: var(--color-text-primary-light);
   }
   
-  .login-text {
+  .signup-text {
     color: var(--color-text-secondary-light);
   }
   
@@ -14,18 +14,18 @@
     color: var(--color-text-secondary-light);
   }
   
-  .login-button {
+  .signup-button {
       background-color: var(--color-btn-primary-light);
       color: var(--color-btn-secondary-light);
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     }
     
-    .login-button:hover {
+    .signup-button:hover {
       background-color: var(--color-btn-primary-light-hover);
       color: var(--color-btn-secondary-light-hover);
     }
   
-    .login-button:active {
+    .signup-button:active {
       transform: scale(0.95);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
@@ -33,27 +33,27 @@
   
   
   @media (prefers-color-scheme: dark) {
-    .login-card {
+    .signup-card {
       background-color: var(--color-bg-secondary-dark);
     }
   
-    .login-title {
+    .signup-title {
       color: var(--color-text-primary-dark);
     }
   
-    .login-text {
+    .signup-text {
       color: var(--color-text-secondary-dark);
     }
     .text-input label {
       color: var(--color-text-secondary-dark);
     }
   
-    .login-button{
+    .signup-button{
       background-color: var(--color-btn-primary-dark);
       color: var(--color-btn-secondary-dark);
     }
   
-    .login-button:hover {
+    .signup-button:hover {
       background-color: var(--color-btn-primary-dark-hover);
       color: var(--color-btn-secondary-dark-hover);
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
