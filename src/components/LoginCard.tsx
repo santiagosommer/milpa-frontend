@@ -9,13 +9,16 @@ import EmailInput from "./EmailInput";
 import PasswordInput from "./PasswordInput";
 import { Card } from './Card';
 
+// Schemas
+import { emailValidation } from "../schemas/authSchema";
+
 // Styles
 import './LoginCard.css';
 
 
 // Form validation schema definition
 const schema = yup.object().shape({
-  email: yup.string().email("Invalid email address").required("Email is required"),
+  email: emailValidation,
   password: yup.string().required("Password is required"),
   
 });
@@ -38,7 +41,7 @@ export const LoginCard = () => {
     // The idea is to develop the form structure in the future, hence the use of FormProvider
     <FormProvider {...methods}>
       <Card className="login-card mx-auto max-w-lg">
-        <form onSubmit={methods.handleSubmit(onSubmit)}  className="flex flex-col items-center justify-center p-4 space-y-4">
+        <form onSubmit={methods.handleSubmit(onSubmit)} className="flex flex-col items-center justify-center p-4 space-y-4">
           <h1 className="login-title text-2xl font-bold text-gray-900 dark:text-gray-50">Login</h1>
           <p className="login-text font-bold">Welcome back!</p>
           <div className="text-input w-full max-w-xs">

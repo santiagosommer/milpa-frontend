@@ -10,14 +10,11 @@ import PasswordInput from "./PasswordInput";
 import { Card } from './Card';
 import ReConfirmPasswordInput from "./ReConfirmPasswordInput";
 
-// Styles
-import './LoginCard.css';
+// Schemas
+import { emailValidation } from "../schemas/authSchema";
 
-// Custom validation function for email TLD
-const emailValidation = yup.string()
-  .email("Invalid email address")
-  .matches(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, "Invalid email address")
-  .required("Email is required");
+// Styles
+import './SignUpCard.css';
 
 // Form validation schema definition
 const schema = yup.object().shape({
@@ -42,16 +39,16 @@ export const SignUpCard = () => {
     // FormProvider is intented for deeply nested structures
     // The idea is to develop the form structure in the future, hence the use of FormProvider
     <FormProvider {...methods}>
-      <Card className="login-card mx-auto max-w-lg">
+      <Card className="signup-card mx-auto max-w-lg">
         <form onSubmit={methods.handleSubmit(onSubmit)} className="flex flex-col items-center justify-center p-4 space-y-4">
-          <h1 className="login-title text-2xl font-bold text-gray-900 dark:text-gray-50">Sign Up</h1>
-          <p className="login-text font-bold">Create your account</p>
+          <h1 className="signup-title text-2xl font-bold text-gray-900 dark:text-gray-50">Sign Up</h1>
+          <p className="signup-text font-bold">Create your account</p>
           <div className="text-input w-full max-w-xs">
             <EmailInput />
             <PasswordInput />
             <ReConfirmPasswordInput />
           </div>
-          <Button type="submit" className="login-button w-full max-w-xs" variant="primary">Sign Up</Button>
+          <Button type="submit" className="signup-button w-full max-w-xs" variant="primary">Sign Up</Button>
         </form>
       </Card>
     </FormProvider>
