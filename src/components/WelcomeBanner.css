@@ -1,0 +1,27 @@
+.welcome-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.welcome-title {
+    margin-top: 10%;
+    color: var(--color-text-primary-light);
+    font-size: 6em;
+    font-family: "Readex Pro", serif;
+    font-size: 8em;
+    font-weight: bold;
+    letter-spacing: 6px;
+    line-height: 1.1;
+    text-shadow: 5px 5px 13px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    margin-right: auto;
+}
+
+.welcome-text {
+    text-align: right;
+    margin-left: auto;
+    margin-top: 4em;
+    width: 50%;
+}
