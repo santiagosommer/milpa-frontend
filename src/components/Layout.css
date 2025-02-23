@@ -1,0 +1,27 @@
+  /* Hace que el nav se mantenga en la parte superior */
+  nav {
+    position: fixed; /* Lo fija en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    z-index: 1000; /* Para que quede sobre otros elementos */
+    background-color: #A4B465;
+  }
+  
+  /* Estilo básico para los links */
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  nav a {
+    color: #FFCF50;
+  }
+
+  nav a:hover {
+    color: var(--color-btn-secondary-light-hover);
+  } 
+  
