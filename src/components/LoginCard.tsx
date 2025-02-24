@@ -32,8 +32,17 @@ export const LoginCard = () => {
   });
 
   const onSubmit = (data: { email: string; password: string }) => {
-    // Send data to backend here
-    console.log(data.email, data.password);
+    fetch('https://mywebsite.example/endpoint/', { // Put endpoint here
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        "email": data.email,
+        'password': data.password,
+      })
+    })
   };
 
   return(
