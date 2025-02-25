@@ -21,9 +21,9 @@ export const CreateUserCard = () => {
     resolver: yupResolver(authSchema),
   });
 
-  const onSubmit = (data: { email: string; password: string; confirmPassword: string }) => {
+  const onSubmit = (data: { username: string; password: string; confirmPassword: string }) => {
     // Send data to backend here
-    console.log(data.email, data.password, data.confirmPassword);
+    console.log(data.username, data.password, data.confirmPassword);
   };
 
   return(
