@@ -1,7 +1,7 @@
 "use client"
 
 import { useFormContext } from "react-hook-form"
-import { Input } from "../components/Input"
+import { Input } from "./Input"
 import { Label } from "./Label"
 
 export const ReConfirmPasswordInput = () => {

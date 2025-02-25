@@ -1,31 +1,37 @@
-.signup-card {
+.create-user-card {
     background-color: var(--color-bg-secondary-light);
   }
   
-  .signup-title {
+  .create-user-title {
     color: var(--color-text-primary-light);
   }
   
-  .signup-text {
+  .create-user-text {
     color: var(--color-text-secondary-light);
+  }
+
+  .text-input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
   }
   
   .text-input label {
     color: var(--color-text-secondary-light);
   }
   
-  .signup-button {
+  .create-user-button {
       background-color: var(--color-btn-primary-light);
       color: var(--color-btn-secondary-light);
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     }
     
-    .signup-button:hover {
+    .create-user-button:hover {
       background-color: var(--color-btn-primary-light-hover);
       color: var(--color-btn-secondary-light-hover);
     }
   
-    .signup-button:active {
+    .create-user-button:active {
       transform: scale(0.95);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
@@ -33,27 +39,27 @@
   
   
   @media (prefers-color-scheme: dark) {
-    .signup-card {
+    .create-user-card {
       background-color: var(--color-bg-secondary-dark);
     }
   
-    .signup-title {
+    .create-user-title {
       color: var(--color-text-primary-dark);
     }
   
-    .signup-text {
+    .create-user-text {
       color: var(--color-text-secondary-dark);
     }
     .text-input label {
       color: var(--color-text-secondary-dark);
     }
   
-    .signup-button{
+    .create-user-button{
       background-color: var(--color-btn-primary-dark);
       color: var(--color-btn-secondary-dark);
     }
   
-    .signup-button:hover {
+    .create-user-button:hover {
       background-color: var(--color-btn-primary-dark-hover);
       color: var(--color-btn-secondary-dark-hover);
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
