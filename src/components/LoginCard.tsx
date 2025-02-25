@@ -22,9 +22,18 @@ export const LoginCard = () => {
     resolver: yupResolver(authSchema),
   });
 
-  const onSubmit = (data: { username: string; password: string }) => {
-    // Send data to backend here
-    console.log(data.username, data.password);
+  const onSubmit = (data: { email: string; password: string }) => {
+    fetch('https://mywebsite.example/endpoint/', { // Put endpoint here
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        "email": data.email,
+        'password': data.password,
+      })
+    })
   };
 
   return(
